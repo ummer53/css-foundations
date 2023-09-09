@@ -1,0 +1,60 @@
+@import url('./base.css');
+
+.home .main__heading {
+	font-size: 128px;
+	font-weight: bold;
+}
+
+.home .main__sub-heading {
+	font-size: 40px;
+}
+
+.button-container {
+	display: flex;
+	margin-top: 100px;
+}
+
+.button:not(button:last-of-type) {
+	margin-inline-end: 20px;
+}
+
+.button__icon {
+	vertical-align: middle;
+}
+
+.home .menu path {
+	fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+	fill: var(--color-text-on-primary);
+}
+
+@media (max-width: 1224px) {
+	.home .main__heading {
+		font-size: 60px;
+	}
+
+	.home .main__sub-heading {
+		font-size: 32px;
+	}
+
+	.button__icon {
+		width: 20px;
+	}
+}
+
+@media (max-width: 680px) {
+	.home .main__heading {
+		font-size: 40px;
+	}
+
+	.home .main__sub-heading {
+		font-size: 24px;
+	}
+
+	.button-container {
+		margin-top: 32px;
+		flex-direction: column;
+	}
+}
